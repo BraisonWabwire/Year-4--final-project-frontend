@@ -15,10 +15,11 @@ body{
     justify-content: center;
 }
 .container .form{
-    width: 40%;
+    width: 30%;
     height: auto;
     background-color: white;
-    padding: 100px;
+    padding: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .container .form .logo{
     display: flex;
@@ -29,6 +30,7 @@ body{
     color: #313657;
     text-align: center;
     margin-bottom: 50px;
+    font-size: 20px;
 }
 
 .container .form form{
@@ -40,10 +42,10 @@ body{
 }
 .container .form form input{
     height: 40px;
-    width: 400px;
+    width: 350px;
     border: none;
     border-bottom: 2px solid #313657;
-    /* color: white; */
+    color: #313657;
     outline: none;
 }
 .container .form form button{
