@@ -150,7 +150,7 @@ body{
     font-size: 14px;
 }
 .middle-section .right button:hover{
-    background-color: #6f749789;
+    background-color: #cd88db;
     transition: 0.5s ease-in-out;
     color: white;
 }
