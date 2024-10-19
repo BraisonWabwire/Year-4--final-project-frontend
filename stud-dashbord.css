@@ -2,22 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Manrope:wght@200..800&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color:#f3f4f4;
+
+body {
+    background-color: #f3f4f4;
     display: flex;
 }
-.container{
+
+.container {
     width: 100%;
     height: auto;
     display: flex;
 
 }
-.nav{
+
+.nav {
     width: 20%;
     height: 100vh;
     background-color: #161b40;
@@ -28,8 +33,9 @@ body{
     display: flex;
     flex-direction: column;
 }
-.logo{
-    width:100%;
+
+.logo {
+    width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
@@ -38,104 +44,117 @@ body{
     color: white;
     margin-bottom: 30px;
 }
-.logo h2{
+
+.logo h2 {
     font-family: "Rubik", sans-serif;
     font-style: normal;
 }
-.logo img{
+
+.logo img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
-.nav ul{
+
+.nav ul {
     display: flex;
     flex-direction: column;
 }
-.nav ul li{
+
+.nav ul li {
     width: 100%;
     height: 50px;
     padding-left: 60px;
     display: flex;
     gap: 1rem;
     align-items: center;
-}.nav ul li i{
+}
+
+.nav ul li i {
     color: white;
 }
-.nav ul li:hover{
+
+.nav ul li:hover {
     background-color: #404778;
 }
-.nav ul li a{
+
+.nav ul li a {
     color: white;
     text-decoration: none;
     text-transform: capitalize;
     font-family: "Tajawal", sans-serif;
 }
-.nav ul li .logout{
+
+.nav ul li .logout {
     bottom: 0;
     position: absolute;
 }
 
 /* main section design */
-.main-content{
+.main-content {
     width: 80%;
     height: auto;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     padding: 20px;
     overflow: hidden;
     gap: 1rem;
+    /* **************hidden visibility */
+    display: none;
 }
-.main-content .top-nav{
+
+.main-content .top-nav {
     height: auto;
-    background-color: #161b40;
-    border-radius: 10px;
+    /* border-bottom: 1px solid #161b40; */
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 15rem;
     padding-left: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
 }
-.main-content .top-nav h2{
-    color: white;
+
+.main-content .top-nav h2 {
+    color: #404778;
     font-family: "Afacad Flux", sans-serif;
     font-size: 20px;
     letter-spacing: 0.5px;
 }
-.main-content .top-nav .search{
+
+.main-content .top-nav .search {
     width: 350px;
-    height: 30px;
-    background-color: white;
+    height: 28px;
+    background-color: transparent;
     outline: none;
-    border: 1px solid black;
+    border: 1px solid #161b40;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
-    padding: 5px;
-    /* gap: 0.3rem; */
 }
-.main-content .top-nav .search input{
+
+.main-content .top-nav .search input {
     border: none;
-    background-color: none;
+    background-color: transparent;
     outline: none;
     width: 300px;
     /* padding-left: 5rem; */
 }
 
-.main-content .top-content{
+.main-content .top-content {
     width: 100%;
     height: 35vh;
     overflow-y: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+    grid-template-columns: repeat(4, 1fr);
+    /* Four equal-width columns */
     gap: 20px;
     padding: 20px;
-    /* border-bottom: 1px solid #161b40; */
 }
-.main-content .top-content .cart{
+
+.main-content .top-content .cart {
     width: 250px;
     height: 22vh;
     padding: 10px;
@@ -149,19 +168,21 @@ body{
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.main-content .top-content .cart h2{
+
+.main-content .top-content .cart h2 {
     font-size: 14px;
     font-family: "Manrope", sans-serif;
-    color: #474745;  
-    
-}
-.main-content .top-content .cart h3{
-    font-size: 13px;
-    font-family: "Manrope", sans-serif;
-    color: #474745;  
+    color: #474745;
+
 }
 
-.cart button{
+.main-content .top-content .cart h3 {
+    font-size: 13px;
+    font-family: "Manrope", sans-serif;
+    color: #474745;
+}
+
+.cart button {
     width: 100px;
     height: 40px;
     background-color: #161b40;
@@ -171,11 +192,10 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
+
 /* middle content */
-.middle-nav{
+.middle-nav {
     height: auto;
-    background-color: #161b40;
-    border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -183,25 +203,29 @@ body{
     padding-left: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
 }
-.middle-nav h2{
-    color: white;
+
+.middle-nav h2 {
+    color: #404778;
     font-family: "Afacad Flux", sans-serif;
     font-size: 20px;
     letter-spacing: 0.5px;
 }
-.middle-content{
+
+.middle-content {
     width: 100%;
     height: 38vh;
     overflow-y: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 20px;
     gap: 20px;
 
 }
-.middle-content .mid-cart{
-    width: 250px;
+
+.middle-content .mid-cart {
+    width: 300px;
     height: 22vh;
     padding: 10px;
     display: flex;
@@ -213,17 +237,21 @@ body{
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}.middle-content .mid-cart h2{
+}
+
+.middle-content .mid-cart h2 {
     font-size: 14px;
     font-family: "Manrope", sans-serif;
-    color: #474745;  
+    color: #474745;
 }
-.middle-content .mid-cart h3{
+
+.middle-content .mid-cart h3 {
     font-size: 13px;
     font-family: "Manrope", sans-serif;
     color: #474745;
 }
-.mid-cart button{
+
+.mid-cart button {
     width: 100px;
     height: 40px;
     background-color: #6d2750;
@@ -233,4 +261,208 @@ body{
     border-radius: 10px;
     cursor: pointer;
 
+}
+
+.main-studProfile {
+    width: 80%;
+    height: 100vh;
+    /* background-color: #6d2750; */
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-studProfile .profile_header {
+    width: 95%;
+    height: 15vh;
+    /* background-color: #217257; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-studProfile .profile_header h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 26px;
+}
+
+.main-studProfile .profile_header h3 {
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+}
+
+.main-studProfile .profile-content {
+    width: 95%;
+    height: 80vh;
+    /* background: #a3d00e; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+.main-studProfile .profile-content .left-profile-content {
+    background-color: #a8b2b2;
+    border-radius: 20px;
+    width: 30%;
+    height: 45vh;
+}
+
+.main-studProfile .profile-content .left-profile-content .image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    gap: 1rem;
+    box-shadow: 0 3px 3px -3px rgba(37, 45, 57, 0.5);
+    
+}
+
+.main-studProfile .profile-content .left-profile-content .image h3 {
+    color: #0e1021;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+}
+
+.main-studProfile .profile-content .left-profile-content .image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    border: 12px solid #6d2750;
+    
+    
+}
+
+.main-studProfile .profile-content .left-profile-content .user-content h3 {
+    font-family: "Baloo Paaji 2", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.main-studProfile .profile-content .right-profile-content {
+    background-color: #a8b2b2;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-studProfile .profile-content .right-profile-content form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main-studProfile .profile-content .right-profile-content form .personal-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.main-studProfile .profile-content .right-profile-content form .general-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.right-profile-content .header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.3rem;
+}
+.right-profile-content .header h3{
+    font-family: "Baloo Paaji 2", sans-serif;
+    font-weight: 400;
+}
+.main-studProfile .profile-content .right-profile-content form .personal-info input{
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.main-studProfile .profile-content .right-profile-content form .general-info input{
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.main-studProfile .profile-content .right-profile-content form .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-studProfile .profile-content .right-profile-content form .button button{
+    width: 150px;
+    height: 45px;
+    background-color: #6d2750;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-studAnalytics {
+    width: 80%;
+    height: 100vh;
+    background-color: #36057a;
+    display: none;
+}
+
+.main-studCourses {
+    width: 80%;
+    height: 100vh;
+    background-color: #28131f;
+    display: none;
+}
+
+.main-studTasks {
+    width: 80%;
+    height: 100vh;
+    background-color: #217257;
+    display: none;
+}
+
+.main-studSettings {
+    width: 80%;
+    height: 100vh;
+    background-color: #a3d00e;
+    display: none;
 }

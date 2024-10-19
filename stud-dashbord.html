@@ -1,137 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stud-dashbord.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./stud-dashboard.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Dashboard</title>
 </head>
+
 <body>
     <div class="container">
         <div class="nav">
             <div class="logo">
-                    <img src="./logo.png" alt="" srcset="">
-                    <h2>Dashbord</h2>
+                <img src="./logo.png" alt="" srcset="">
+                <h2>Dashbord</h2>
             </div>
             <ul>
-                <li><i class="fa-solid fa-house"></i><a href="">Home</a></li>
-                <li><i class="fa-solid fa-user"></i><a href="">Profile</a></li>
-                <li><i class="fa-solid fa-chart-line"></i><a href="">Analytics</a></li>
-                <li><i class="fa-solid fa-book"></i><a href=""> Courses</a></li>
-                <li><i class="fa-solid fa-list-check"></i> <a href="">Tasks</a></li>
-                <li><i class="fa-solid fa-gear"></i><a href=""> settings</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="" onclick="showContent(event,'student_Home')">Home</a>
+                </li>
+                <li><i class="fa-solid fa-user"></i><a href=""
+                        onclick="showContent(event,'student_Profile')">Profile</a></li>
+                <li><i class="fa-solid fa-chart-line"></i><a href=""
+                        onclick="showContent(event,'student_Analytics')">Analytics</a></li>
+                <li><i class="fa-solid fa-book"></i><a href="" onclick="showContent(event,'student_Courses')">
+                        Courses</a></li>
+                <li><i class="fa-solid fa-list-check"></i> <a href=""
+                        onclick="showContent(event,'student_Tasks')">Tasks</a></li>
+                <li><i class="fa-solid fa-gear"></i><a href="" onclick="showContent(event,'student_Settings')">
+                        settings</a></li>
                 <li><i class="fa-solid fa-circle-question"></i><a href="">help</a></li>
-               <span class="logout">
-                <li><i class="fa-solid fa-right-from-bracket"></i><a href="">logout</a></li>
-               </span>
+                <span class="logout">
+                    <li><i class="fa-solid fa-right-from-bracket"></i><a href="">logout</a></li>
+                </span>
             </ul>
         </div>
-            <div class="main-content">
-                <div class="top-nav">
-                    <h2>Courses Available</h2>
-                    <div class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <form action="" method="post">
-                            <input type="text" placeholder="search for course">
-                            <button type="submit"></button>
-                        </form>
+        <!-- *************************** student home  ***************************** -->
+        <div class="main-content" id="student_Home">
+            <div class="top-nav">
+                <h2>Courses Available</h2>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <form action="" method="post">
+                        <input type="text" placeholder="search for course">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="top-content">
+                <div class="cart">
+                    <i class="fa-solid fa-calculator"></i>
+                    <h2>Linear Algebra</h2>
+                    <h3>Joined over 1 million students</h3>
+                    <button type="submit">start course</button>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h2>Networking</h2>
+                    <h3>Joined over 1 million students</h3>
+                    <button type="submit">start course</button>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database</h2>
+                    <h3>Joined over 1 million students</h3>
+                    <button type="submit">start course</button>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine learning</h2>
+                    <h3>Joined over 1 million students</h3>
+                    <button type="submit">start course</button>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine learning</h2>
+                    <h3>Joined over 1 million students</h3>
+                    <button type="submit">start course</button>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine learning</h2>
+                    <h3>Joined over 1 million students</h3>
+                    <button type="submit">start course</button>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine learning</h2>
+                    <h3>Joined over 1 million students</h3>
+                    <button type="submit">start course</button>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine learning</h2>
+                    <h3>Joined over 1 million students</h3>
+                    <button type="submit">start course</button>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine learning</h2>
+                    <h3>Joined over 1 million students</h3>
+                    <button type="submit">start course</button>
+                </div>
+
+            </div>
+            <div class="middle-nav">
+                <h2>Courses in progress</h2>
+            </div>
+            <div class="middle-content">
+                <div class="mid-cart">
+                    <h2>Cyber security</h2>
+                    <h3>80% progress</h3>
+                    <button type="submit"> continue</button>
+                </div>
+                <div class="mid-cart">
+                    <h2>Cyber security</h2>
+                    <h3>50% progress</h3>
+                    <button type="submit"> continue</button>
+                </div>
+                <div class="mid-cart">
+                    <h2>Cyber security</h2>
+                    <h3>40% progress</h3>
+                    <button type="submit"> continue</button>
+                </div>
+                <div class="mid-cart">
+                    <h2>Cyber security</h2>
+                    <h3>40% progress</h3>
+                    <button type="submit"> continue</button>
+                </div>
+                <div class="mid-cart">
+                    <h2>Cyber security</h2>
+                    <h3>40% progress</h3>
+                    <button type="submit"> continue</button>
+                </div>
+                <div class="mid-cart">
+                    <h2>Cyber security</h2>
+                    <h3>40% progress</h3>
+                    <button type="submit"> continue</button>
+                </div>
+            </div>
+            </h3>
+        </div>
+
+        <!-- ***************main content student profile *************** -->
+        <div class="main-studProfile" id="student_Profile">
+            <div class="profile_header">
+                <h2>student Profile</h2>
+                <h3>You can edit and save your profile</h3>
+            </div>
+            <div class="profile-content">
+                <div class="left-profile-content">
+                    <div class="image">
+                        <img src="./person1.jpg" alt="" srcset="">
+                        <h3>Braison Wabwire</h3>
+                    </div>
+                    <div class="user-content">
+                        <h3>Id : 4588689</h3>
+                        <h3>Performance : 90% </h3>
                     </div>
                 </div>
-                    <div class="top-content">
-                        <div class="cart">
-                            <i class="fa-solid fa-calculator"></i>
-                            <h2>Linear Algebra</h2>
-                            <h3>Joined over 1 million students</h3>
-                            <button type="submit">start course</button>
-                        </div>
-                        <div class="cart">
-                            <i class="fa-solid fa-network-wired"></i>
-                            <h2>Networking</h2>
-                            <h3>Joined over 1 million students</h3>
-                            <button type="submit">start course</button>
-                        </div>
-                        <div class="cart">
-                            <i class="fa-solid fa-database"></i>
-                            <h2>Database</h2>
-                            <h3>Joined over 1 million students</h3>
-                            <button type="submit">start course</button>
-                        </div>
-                        <div class="cart">
-                            <i class="fa-solid fa-robot"></i>
-                            <h2>Machine learning</h2>
-                            <h3>Joined over 1 million students</h3>
-                            <button type="submit">start course</button>
-                        </div>
-                        <div class="cart">
-                            <i class="fa-solid fa-robot"></i>
-                            <h2>Machine learning</h2>
-                            <h3>Joined over 1 million students</h3>
-                            <button type="submit">start course</button>
-                        </div>
-                        <div class="cart">
-                            <i class="fa-solid fa-robot"></i>
-                            <h2>Machine learning</h2>
-                            <h3>Joined over 1 million students</h3>
-                            <button type="submit">start course</button>
-                        </div>
-                        <div class="cart">
-                            <i class="fa-solid fa-robot"></i>
-                            <h2>Machine learning</h2>
-                            <h3>Joined over 1 million students</h3>
-                            <button type="submit">start course</button>
-                        </div>
-                        <div class="cart">
-                            <i class="fa-solid fa-robot"></i>
-                            <h2>Machine learning</h2>
-                            <h3>Joined over 1 million students</h3>
-                            <button type="submit">start course</button>
-                        </div>
-                        <div class="cart">
-                            <i class="fa-solid fa-robot"></i>
-                            <h2>Machine learning</h2>
-                            <h3>Joined over 1 million students</h3>
-                            <button type="submit">start course</button>
-                        </div>
+                <div class="right-profile-content">
+                        <form action="">
+                            <div class="personal-info">
+                                <div class="header"><i class="fa-solid fa-link"></i><h3>Personal-info</h3></div>
+                                <input type="text" name="" id="" placeholder="username">
+                                <input type="eamil" name="" id="" placeholder="email adress">
+                                <input type="text" placeholder="contacts">
+                            </div>
+                            <div class="general-info">
+                                <div class="header"><i class="fa-solid fa-paperclip"></i><h3>General-info</h3></div>
+                                <input type="text" placeholder="level of education">
+                                <input type="text" placeholder="years of experience">
+                                <input type="text" placeholder="postal adress">
+                            </div>
+                            <div class="button">
+                                <button type="submit"> Update details</button>
+                            </div>
+                        </form>
                         
+
                     </div>
-                    <div class="middle-nav">
-                        <h2>Courses in progress</h2>
+
                     </div>
-                    <div class="middle-content">
-                        <div class="mid-cart">
-                            <h2>Cyber security</h2>
-                            <h3>80% progress</h3>
-                            <button type="submit"> continue</button>
-                        </div>
-                        <div class="mid-cart">
-                            <h2>Cyber security</h2>
-                            <h3>50% progress</h3>
-                            <button type="submit"> continue</button>
-                        </div>
-                        <div class="mid-cart">
-                            <h2>Cyber security</h2>
-                            <h3>40% progress</h3>
-                            <button type="submit"> continue</button>
-                        </div>
-                        <div class="mid-cart">
-                            <h2>Cyber security</h2>
-                            <h3>40% progress</h3>
-                            <button type="submit"> continue</button>
-                        </div>
-                        <div class="mid-cart">
-                            <h2>Cyber security</h2>
-                            <h3>40% progress</h3>
-                            <button type="submit"> continue</button>
-                        </div>
-                        <div class="mid-cart">
-                            <h2>Cyber security</h2>
-                            <h3>40% progress</h3>
-                            <button type="submit"> continue</button>
-                        </div>
-                    </div>
-                </h3>
+                </div>
             </div>
+        </div>
+        <div class="main-studAnalytics" id="student_Analytics">
+
+        </div>
+        <div class="main-studCourses" id="student_Courses">
+
+        </div>
+        <div class="main-studTasks" id="student_Tasks">
+
+        </div>
+        <div class="main-studSettings" id="student_Settings">
+
+        </div>
+
     </div>
 </body>
+
 </html>
