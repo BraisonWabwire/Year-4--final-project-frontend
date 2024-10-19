@@ -1,5 +1,5 @@
 function showContent(event, contentId) {
-    // Prevent the link's default behavior (which is to reload the page)
+    // Prevent the link's default behavior
     event.preventDefault();
 
     // Hide all content sections
@@ -8,7 +8,9 @@ function showContent(event, contentId) {
         section.style.display = 'none';  // Hide all sections
     });
 
-    // Show the clicked section,
+    // Show the clicked section
     const activeSection = document.getElementById(contentId);
-    activeSection.style.display = 'block';  // Show the active section
+    if (activeSection) {
+        activeSection.style.display = 'block';  // Show the active section
+    }
 }

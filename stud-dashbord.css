@@ -19,22 +19,22 @@ body {
     width: 100%;
     height: auto;
     display: flex;
+    background-color: white;
 
 }
 
-.nav {
+.container .nav {
     width: 20%;
     height: 100vh;
     background-color: #161b40;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     padding-top: 40px;
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
 }
 
-.logo {
+.container .nav .logo {
     width: 100%;
     height: 40px;
     display: flex;
@@ -90,7 +90,7 @@ body {
     position: absolute;
 }
 
-/* main section design */
+/* ***************main section design************ */
 .main-content {
     width: 80%;
     height: auto;
@@ -99,7 +99,6 @@ body {
     padding: 20px;
     overflow: hidden;
     gap: 1rem;
-    /* **************hidden visibility */
     display: none;
 }
 
@@ -326,7 +325,7 @@ body {
     padding-bottom: 10px;
     gap: 1rem;
     box-shadow: 0 3px 3px -3px rgba(37, 45, 57, 0.5);
-    
+
 }
 
 .main-studProfile .profile-content .left-profile-content .image h3 {
@@ -344,12 +343,14 @@ body {
     text-align: left;
     border: 12px solid #6d2750;
 }
-.main-studProfile .profile-content .left-profile-content .user-content{
+
+.main-studProfile .profile-content .left-profile-content .user-content {
     width: 100%;
     height: auto;
     padding-left: 30px;
     padding-top: 10px;
 }
+
 .main-studProfile .profile-content .left-profile-content .user-content h3 {
     font-family: "Baloo Paaji 2", sans-serif;
     font-weight: 200;
@@ -363,34 +364,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 20px;
+
 }
-.main-studProfile .profile-content .right-profile-content form{
+
+.main-studProfile .profile-content .right-profile-content form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.main-studProfile .profile-content .right-profile-content form .personal-info{
+
+.main-studProfile .profile-content .right-profile-content form .personal-info {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.main-studProfile .profile-content .right-profile-content form .general-info{
+
+.main-studProfile .profile-content .right-profile-content form .general-info {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.right-profile-content .header{
+
+.right-profile-content .header {
     display: flex;
     align-items: center;
     justify-content: left;
     gap: 0.3rem;
 }
-.right-profile-content .header h3{
+
+.right-profile-content .header h3 {
     font-family: "Baloo Paaji 2", sans-serif;
     font-weight: 400;
 }
-.main-studProfile .profile-content .right-profile-content form .personal-info input{
+
+.main-studProfile .profile-content .right-profile-content form .personal-info input {
     width: 500px;
     height: 40px;
     padding: 10px;
@@ -398,7 +406,8 @@ body {
     outline: none;
     border: none;
 }
-.main-studProfile .profile-content .right-profile-content form .general-info input{
+
+.main-studProfile .profile-content .right-profile-content form .general-info input {
     width: 500px;
     height: 40px;
     padding: 10px;
@@ -406,12 +415,14 @@ body {
     outline: none;
     border: none;
 }
-.main-studProfile .profile-content .right-profile-content form .button{
+
+.main-studProfile .profile-content .right-profile-content form .button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main-studProfile .profile-content .right-profile-content form .button button{
+
+.main-studProfile .profile-content .right-profile-content form .button button {
     width: 150px;
     height: 45px;
     background-color: #6d2750;
@@ -424,47 +435,31 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-studAnalytics {
-    width: 80%;
-    height: 100vh;
-    background-color: #36057a;
+/* ***************Analytics design******************** */
+.main-studAnalytics{
+    width: 80%; 
+    height: 100vh; 
     display: none;
+    background-color: #6d2750;
 }
-
-.main-studCourses {
-    width: 80%;
-    height: 100vh;
-    background-color: #28131f;
+.main-studCourses{
     display: none;
+    width: 80%; 
+    height: 100vh; 
+    display: none;
+    background-color: #6d2750;
 }
-
-.main-studTasks {
-    width: 80%;
-    height: 100vh;
-    background-color: #217257;
+.main-studTasks{
     display: none;
+    width: 80%; 
+    height: 100vh; 
+    display: none;
+    background-color: #6d2750;
 }
-
-.main-studSettings {
-    width: 80%;
-    height: 100vh;
-    background-color: #a3d00e;
+.main-studSettings{
     display: none;
+    width: 80%; 
+    height: 100vh; 
+    display: none;
+    background-color: #6d2750;
 }
