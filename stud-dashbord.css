@@ -312,7 +312,7 @@ body {
     background-color: #a8b2b2;
     border-radius: 20px;
     width: 30%;
-    height: 45vh;
+    height: 50vh;
 }
 
 .main-studProfile .profile-content .left-profile-content .image {
@@ -336,18 +336,20 @@ body {
 }
 
 .main-studProfile .profile-content .left-profile-content .image img {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     flex-direction: column;
-    width: 100%;
     height: auto;
     text-align: left;
     border: 12px solid #6d2750;
-    
-    
 }
-
+.main-studProfile .profile-content .left-profile-content .user-content{
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-top: 10px;
+}
 .main-studProfile .profile-content .left-profile-content .user-content h3 {
     font-family: "Baloo Paaji 2", sans-serif;
     font-weight: 200;
